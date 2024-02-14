@@ -1,0 +1,297 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.Kontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*Header Section*/
+
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+}
+
+.logo{
+    order: 1;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.logo img {
+    max-height:100px; 
+    width: auto;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+nav ul{
+    display: flex;
+    order: 2;
+}
+
+nav ul a{
+    color: darkcyan;
+    font-size: 1.6rem;
+    margin-right: 2rem;
+}
+
+.Container{
+    height: 600px;
+    padding: 84px 20px 20px ;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.Container img{
+    width: 100%;
+    height: 500px;
+}
+
+.text-box{
+    width: 100%;
+}
+
+.text-box h1{
+    font-size: 3.3rem;
+    margin-bottom: 8px;
+    color: coral;
+}
+
+/*Member Section*/
+
+.page_two{
+
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+.team-section{
+    width: 100%;
+    
+}
+
+.team-section .container{
+    width: 80%;
+    margin: auto;
+}
+
+.team-section .container .row{
+    width: 60%;
+    margin: auto;
+}
+
+
+
+.team-section .container .row .title{
+    text-align: center;
+    margin-top: 50px;
+    
+}
+
+
+
+.team-section .container .row .title h1{
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #eb6234;
+}
+
+
+
+.team-section .container .row .title p{
+    font-size: 18px;
+    font-family: sans-serif;
+    margin: 30px 0px;
+    color: #a3a3a3;
+    
+}
+
+
+.team-section .container .team-card{
+    width: 100%;
+    display: grid;
+    /*grid-template-columns: repeat(3, 1fr);*/
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+
+.team-section .container .team-card .card{
+    width: 100%;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.team-section .container .team-card .card .image-section img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    
+}
+
+.team-section .container .team-card:nth-child(n+3) {
+    justify-self: center; 
+}
+
+
+
+
+/*Project*/
+
+.page_three{
+
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 30px;
+    margin: 10px;
+}
+
+.box-1{
+    width: 500px;
+    height: 300px;
+    background-color:cadetblue;
+    
+}
+
+.box-2{
+    width: 500px;
+    height: 300px;
+    background-color: white;
+}
+
+.container-3{
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.box-2 img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.box-1 h1{
+    text-align: center;
+    color: white;
+}
+
+.box-1 li{
+    margin: 10px 0;
+    margin-left: 20px;
+    text-align: center;
+    list-style: none;
+    background-size: 20px;
+    padding: 5px 5px;
+    color: aliceblue;
+}
+
+footer{
+    background-color:cadetblue;
+
+}
+
+.footer{
+    width: 100%;
+    padding: 70px 30px 20px;
+    align-items: center;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+}
+
+.icons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.icons a i{
+    font-size: 2rem;
+    color: black;
+    opacity: 0.9;
+}
+
+.footerNav{
+    margin: 30px 0;
+}
+
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+}
+
+.footerNav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:after{
+    opacity: 1;
+}
+
+.footerBottom{
+    background-color: cadetblue;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p{
+    color: white;
+}
+
+
+
